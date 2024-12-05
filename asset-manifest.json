@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kalakari-website/static/css/main.802cb2b6.css",
+    "main.js": "/kalakari-website/static/js/main.9dc83cb1.js",
+    "static/js/453.c9da0305.chunk.js": "/kalakari-website/static/js/453.c9da0305.chunk.js",
+    "index.html": "/kalakari-website/index.html",
+    "main.802cb2b6.css.map": "/kalakari-website/static/css/main.802cb2b6.css.map",
+    "main.9dc83cb1.js.map": "/kalakari-website/static/js/main.9dc83cb1.js.map",
+    "453.c9da0305.chunk.js.map": "/kalakari-website/static/js/453.c9da0305.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.802cb2b6.css",
+    "static/js/main.9dc83cb1.js"
+  ]
+}
