@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kalakari-website/static/css/main.13ed0a7b.css",
-    "main.js": "/kalakari-website/static/js/main.cd3b6b23.js",
+    "main.js": "/kalakari-website/static/js/main.b3a581d2.js",
     "static/js/453.c9da0305.chunk.js": "/kalakari-website/static/js/453.c9da0305.chunk.js",
     "static/media/i3.jpg": "/kalakari-website/static/media/i3.e788ff583abe3156d7de.jpg",
     "static/media/i7.jpeg": "/kalakari-website/static/media/i7.8af93ac0e4e58107454e.jpeg",
@@ -16,11 +16,11 @@
     "static/media/name-logo.jpeg": "/kalakari-website/static/media/name-logo.c716e81ab381157c27a8.jpeg",
     "index.html": "/kalakari-website/index.html",
     "main.13ed0a7b.css.map": "/kalakari-website/static/css/main.13ed0a7b.css.map",
-    "main.cd3b6b23.js.map": "/kalakari-website/static/js/main.cd3b6b23.js.map",
+    "main.b3a581d2.js.map": "/kalakari-website/static/js/main.b3a581d2.js.map",
     "453.c9da0305.chunk.js.map": "/kalakari-website/static/js/453.c9da0305.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13ed0a7b.css",
-    "static/js/main.cd3b6b23.js"
+    "static/js/main.b3a581d2.js"
   ]
 }
