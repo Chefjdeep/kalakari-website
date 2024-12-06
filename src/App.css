@@ -1,39 +1,53 @@
 html {
 	scroll-behavior: smooth;
-}
-
-body {
+  }
+  
+  body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, sans-serif;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 	background-color: black;
-	padding-bottom: 20px; 
-}
-
-.App {
+	min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+	display: flex;
+	flex-direction: column; /* Use flexbox to manage layout */
+  }
+  
+  .App {
+	flex: 1;
 	position: relative;
-	padding-bottom: 40px;
-}
-
-footer {
-	background: black; 
-	color: gold; 
+  }
+  
+  footer {
+	background: black;
+	color: gold;
 	text-align: center;
 	padding: 10px 15px;
 	font-size: 0.8rem;
-	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); 
-	position: fixed;
+	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
 	bottom: 0;
-	width: 100%;
-	z-index: 10; 
-}
-
-footer a {
-	color: #007bff; 
+	z-index: 10;
+  }
+  
+  footer a {
+	color: #007bff;
 	text-decoration: none;
-}
-
-footer a:hover {
-	text-decoration: underline; 
-}
+  }
+  
+  footer a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+	body {
+	  overflow-y: auto; /* Allow vertical scrolling */
+	}
+  
+	footer {
+	  font-size: 0.7rem; /* Slightly smaller text size for mobile */
+	  padding: 8px 10px; /* Adjust padding for better spacing */
+	}
+  }
+  

@@ -7,10 +7,11 @@ import i2 from "../images/i2.jpg";
 import i3 from "../images/i3.jpg";
 import i4 from "../images/i4.jpg";
 import i5 from "../images/i5.jpg";
-import nameLogo from "../images/name-logo.jpeg"; // Import name-logo image
+import nameLogo from "../images/name-logo.jpeg"; 
+import i7 from "../images/i7.jpeg"
 
 const KalakariPage = () => {
-  const images = [i1, i2, i3, i4, i5]; // Use imported images
+  const images = [i7, i1, i2, i3, i4, i5];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

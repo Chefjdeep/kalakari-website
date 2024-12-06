@@ -1,53 +1,55 @@
+/* General Styles for the Gallery */
 .gallery-container {
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
-}
-
-.gallery-container h2 {
+  }
+  
+  .gallery-container h2 {
 	font-size: 30px;
 	margin-bottom: 50px;
 	color: gold;
-}
-
-.Garousel {
+  }
+  
+  .Gcarousel {
 	display: flex;
 	overflow: hidden;
 	position: relative;
-}
-
-.Gcarousel-wrapper {
+	justify-content: center; /* Center the carousel */
+  }
+  
+  .Gcarousel-wrapper {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
-}
-
-.Gcarousel-slide {
+  }
+  
+  .Gcarousel-slide {
 	flex: 0 0 auto;
 	width: 300px;
 	margin: 0 10px;
 	text-align: center;
 	overflow: hidden;
-}
-
-.Gimage {
+  }
+  
+  .Gimage {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
 	border-radius: 10px;
 	transition: transform 0.3s ease-in-out;
-}
-
-.Gimage:hover {
+  }
+  
+  .Gimage:hover {
 	transform: scale(1.5);
-}
-
-.Gimage-title {
+  }
+  
+  .Gimage-title {
 	margin-top: 10px;
 	font-size: 16px;
 	color: gold;
-}
-
-.Gcarousel-button {
+  }
+  
+  /* .Gcarousel-button {
 	position: absolute;
 	top: 50%;
 	background-color: black;
@@ -57,48 +59,59 @@
 	z-index: 2;
 	padding: 10px;
 	border-radius: 50%;
-}
-
-.Gcarousel-button:hover {
+  }
+  
+  .Gcarousel-button:hover {
 	background-color: gold;
 	color: black;
 	transform: scale(1.1);
-}
-
-.Gcarousel-button.left {
+  }
+  
+  .Gcarousel-button.left {
 	left: 10px;
-}
-
-.Gcarousel-button.right {
+  }
+  
+  .Gcarousel-button.right {
 	right: 10px;
-}
-
+  } */
+  
+  /* Mobile View Adjustments *//* Mobile View Adjustments */
 @media (max-width: 768px) {
 	.gallery-container h2 {
-		font-size: 24px;
-		margin-bottom: 15px;
+	  font-size: 24px;
+	  margin-bottom: 15px;
 	}
-
+  
+	.Gcarousel-wrapper {
+	  display: flex;
+	  flex-direction: row; /* Ensures images are arranged horizontally */
+	  width: 100%; /* Full width to avoid overflow */
+	  transform: translateX(0); /* Reset any initial transformation */
+	}
+  
 	.Gcarousel-slide {
-		width: 300px;
-		margin: 10px;
-		margin-right: 10px;
+	  width: 60%; /* Adjust the width of each slide for mobile */
+	  margin: 0 10px; /* Ensure space between images */
+	  flex-shrink: 0; /* Prevent images from shrinking */
 	}
-
+  
 	.Gimage {
-		height: 50vh;
+	  width: 100%; /* Ensure image takes full width of its container */
+	  height: 50vh; /* Set a fixed height relative to viewport */
+	  object-fit: cover; /* Cover the area without distortion */
 	}
-
-	.Gcarousel-button {
-		padding: 8px;
-		font-size: 20px;
+	/* Adjust carousel buttons for mobile view */
+	/* .Gcarousel-button {
+	  padding: 8px;
+	  font-size: 20px;
 	}
-
+  
 	.Gcarousel-button.left {
-		left: 5px;
+	  left: 5px;
 	}
-
+  
 	.Gcarousel-button.right {
-		right: 5px;
-	}
+	  right: 5px;
+	} */
+
 }

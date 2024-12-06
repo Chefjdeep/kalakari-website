@@ -3,16 +3,22 @@
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  padding: 5px 20px; 
+  padding: 5px 20px;  /* Reduced padding to reduce height */
   color: white;
   position: sticky; 
   top: 0;
   z-index: 100;
-  height: 50px; 
+}
+
+.navbar .logo {
+  flex-basis: auto; /* Default for larger screens */
+  max-height: 50px;
+  width: auto;
+  height: auto;
 }
 
 .navbar .logo img {
-  max-height: 80px; 
+  max-height: 50px; /* Reduced logo height */
   width: auto;
   height: auto;
 }
@@ -20,8 +26,10 @@
 .nav-links {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Align links to the left in desktop view */
+  gap: 15px; /* Add spacing between links */
+  width: 100%; /* Full width for mobile */
 }
 
 .nav-links li {
@@ -31,15 +39,45 @@
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 16px; /* Reduced font size for both desktop and mobile */
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 768px) {
   .navbar {
-    justify-content: center; 
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center all elements */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 10px; /* Adjust padding for mobile screens */
+    margin-bottom: -10px;
+    height: auto; /* Adjust height to be more compact */
+    min-height: 50px; /* Optional: set a minimum height to keep navbar from becoming too small */
+  }
+
+  .navbar .logo {
+    flex-basis: 100%; /* Make the logo take full width */
+    text-align: center; /* Center the logo */
+    margin-bottom: 10px; /* Adjust the spacing between logo and nav links */
+    width: 70%; /* Make the logo a little bigger by adjusting the width */
+    max-width: 150px; /* Optional: limit the maximum size for better responsiveness */
+  }
+
+  .nav-links {
+    gap: 10px; /* Adjust spacing for better appearance */
+    width: 100%; /* Ensure nav links take full width */
+    display: flex;
+    justify-content: center; /* Center the links */
+    padding: 0; /* Remove any extra padding */
+    margin: 0; /* Remove any margin */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* Keep font size reduced for mobile */
+    text-align: center; /* Ensure text is centered */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove any margin */
   }
 }
