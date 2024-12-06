@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  padding: 5px 20px;  /* Reduced padding to reduce height */
+  padding: 5px 20px; 
   color: white;
   position: sticky; 
   top: 0;
@@ -11,14 +11,14 @@
 }
 
 .navbar .logo {
-  flex-basis: auto; /* Default for larger screens */
+  flex-basis: auto; 
   max-height: 50px;
   width: auto;
   height: auto;
 }
 
 .navbar .logo img {
-  max-height: 50px; /* Reduced logo height */
+  max-height: 50px;
   width: auto;
   height: auto;
 }
@@ -27,9 +27,9 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end; /* Align links to the left in desktop view */
-  gap: 15px; /* Add spacing between links */
-  width: 100%; /* Full width for mobile */
+  justify-content: flex-end; 
+  gap: 15px;
+  width: 100%;
 }
 
 .nav-links li {
@@ -39,7 +39,7 @@
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 16px; /* Reduced font size for both desktop and mobile */
+  font-size: 16px; 
 }
 
 .nav-links a:hover {
@@ -47,37 +47,37 @@
 }
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center all elements */
-    width: 100%; /* Ensure full width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    padding: 10px; /* Adjust padding for mobile screens */
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px; 
     margin-bottom: -10px;
-    height: auto; /* Adjust height to be more compact */
-    min-height: 50px; /* Optional: set a minimum height to keep navbar from becoming too small */
+    height: auto; 
+    min-height: 50px; 
   }
 
   .navbar .logo {
-    flex-basis: 100%; /* Make the logo take full width */
-    text-align: center; /* Center the logo */
-    margin-bottom: 10px; /* Adjust the spacing between logo and nav links */
-    width: 70%; /* Make the logo a little bigger by adjusting the width */
-    max-width: 150px; /* Optional: limit the maximum size for better responsiveness */
+    flex-basis: 100%; 
+    text-align: center; 
+    margin-bottom: 10px; 
+    width: 70%; 
+    max-width: 150px; 
   }
 
   .nav-links {
-    gap: 10px; /* Adjust spacing for better appearance */
-    width: 100%; /* Ensure nav links take full width */
+    gap: 10px; 
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Center the links */
-    padding: 0; /* Remove any extra padding */
-    margin: 0; /* Remove any margin */
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
   }
 
   .nav-links a {
-    font-size: 14px; /* Keep font size reduced for mobile */
-    text-align: center; /* Ensure text is centered */
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove any margin */
+    font-size: 14px; 
+    text-align: center; 
+    padding: 0; 
+    margin: 0; 
   }
 }

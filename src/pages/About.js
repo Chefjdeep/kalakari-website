@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/About.css";
 
-// Import images
 import i3 from "../images/i3.jpg";
 import k1 from "../images/k1.png";
 import photo from "../images/Photo.jpeg";
@@ -10,7 +9,6 @@ import musicHeads from "../images/music-heads.png";
 const About = () => {
   const [opacity, setOpacity] = useState(1);
 
-  // Team member data with imported images
   const team = [
     { id: 1, name: "Kapeesh Rathod", designation: "Co-ordinator", photo: k1, contact: "7666517267" },
     { id: 2, name: "Jaydeep Tayshete", designation: "Documentation Head", photo: photo },

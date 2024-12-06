@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Gallery.css";
 
-// Import images
 import i1 from "../images/i1.jpg";
 import i2 from "../images/i2.jpg";
 import i3 from "../images/i3.jpg";
@@ -37,8 +36,8 @@ const Gallery = () => {
 			setCurrentIndex((prev) => prev - 1);
 		} else {
 			setIsTransitioning(false);
-			setCurrentIndex(totalImages - 1); // Jump to the last image
-			setTimeout(() => setIsTransitioning(true), 0); // Restore transition
+			setCurrentIndex(totalImages - 1); 
+			setTimeout(() => setIsTransitioning(true), 0); 
 		}
 	};
 

@@ -15,7 +15,7 @@
 	display: flex;
 	overflow: hidden;
 	position: relative;
-	justify-content: center; /* Center the carousel */
+	justify-content: center; 
   }
   
   .Gcarousel-wrapper {
@@ -75,7 +75,7 @@
 	right: 10px;
   } */
   
-  /* Mobile View Adjustments *//* Mobile View Adjustments */
+
 @media (max-width: 768px) {
 	.gallery-container h2 {
 	  font-size: 24px;
@@ -84,23 +84,23 @@
   
 	.Gcarousel-wrapper {
 	  display: flex;
-	  flex-direction: row; /* Ensures images are arranged horizontally */
-	  width: 100%; /* Full width to avoid overflow */
-	  transform: translateX(0); /* Reset any initial transformation */
+	  flex-direction: row; 
+	  width: 100%; 
+	  transform: translateX(0); 
 	}
   
 	.Gcarousel-slide {
-	  width: 60%; /* Adjust the width of each slide for mobile */
-	  margin: 0 10px; /* Ensure space between images */
-	  flex-shrink: 0; /* Prevent images from shrinking */
+	  width: 60%; 
+	  margin: 0 10px; 
+	  flex-shrink: 0; 
 	}
   
 	.Gimage {
-	  width: 100%; /* Ensure image takes full width of its container */
-	  height: 50vh; /* Set a fixed height relative to viewport */
-	  object-fit: cover; /* Cover the area without distortion */
+	  width: 100%; 
+	  height: 50vh; 
+	  object-fit: cover; 
 	}
-	/* Adjust carousel buttons for mobile view */
+
 	/* .Gcarousel-button {
 	  padding: 8px;
 	  font-size: 20px;

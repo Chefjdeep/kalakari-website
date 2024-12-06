@@ -39,15 +39,15 @@ html {
 	text-decoration: underline;
   }
   
-  /* Mobile view adjustments */
+
   @media (max-width: 768px) {
 	body {
-	  overflow-y: auto; /* Allow vertical scrolling */
+	  overflow-y: auto; 
 	}
   
 	footer {
-	  font-size: 0.7rem; /* Slightly smaller text size for mobile */
-	  padding: 8px 10px; /* Adjust padding for better spacing */
+	  font-size: 0.7rem; 
+	  padding: 8px 10px; 
 	}
   }
   

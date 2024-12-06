@@ -69,7 +69,7 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
-        {/* Add a fallback route for unknown paths */}
+
         <Route
           path="*"
           element={

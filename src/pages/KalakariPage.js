@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/KalakariPage.css";
 
-// Import images
+
 import i1 from "../images/i1.jpg";
 import i2 from "../images/i2.jpg";
 import i3 from "../images/i3.jpg";
@@ -18,9 +18,9 @@ const KalakariPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000); 
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   return (
@@ -40,7 +40,7 @@ const KalakariPage = () => {
       <div
         className="content-section"
         style={{
-          backgroundImage: `url(${nameLogo})`, // Use the imported name-logo image
+          backgroundImage: `url(${nameLogo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
