@@ -18,7 +18,7 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route
-          path="/kalakari-website"
+          path="/"
           element={
             <motion.div
               initial={{ opacity: 0 }}
