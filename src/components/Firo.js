@@ -1,26 +1,25 @@
 import React, { useState } from "react";
-import "../styles/Gallery.css";
+import "../styles/Firo.css";
 
-// Import images
-import i1 from "../images/i1.jpg";
-import i2 from "../images/i2.jpg";
-import i3 from "../images/i3.jpg";
-import i4 from "../images/i4.jpg";
-import i5 from "../images/i5.jpg";
-import Firo from "../components/Firo";
 
-const Gallery = () => {
-  const galleryImages = [
-    { id: 1, title: "Cultural Event 1", photo: i1 },
-    { id: 2, title: "Cultural Event 2", photo: i2 },
-    { id: 3, title: "Cultural Event 3", photo: i3 },
-    { id: 4, title: "Cultural Event 4", photo: i4 },
-    { id: 5, title: "Cultural Event 5", photo: i5 },
+import firo1 from "../images/i1.jpg";
+import firo2 from "../images/i2.jpg";
+import firo3 from "../images/i3.jpg";
+import firo4 from "../images/i4.jpg";
+import firo5 from "../images/i5.jpg";
+
+const Firo = () => {
+  const firoImages = [
+    { id: 1, title: "Firodiya Moment 1", photo: firo1 },
+    { id: 2, title: "Firodiya Moment 2", photo: firo2 },
+    { id: 3, title: "Firodiya Moment 3", photo: firo3 },
+    { id: 4, title: "Firodiya Moment 4", photo: firo4 },
+    { id: 5, title: "Firodiya Moment 5", photo: firo5 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
-  const totalImages = galleryImages.length;
+  const totalImages = firoImages.length;
 
   const handleNext = () => {
     if (currentIndex < totalImages - 1) {
@@ -55,36 +54,33 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
-      <h2>Gallery</h2>
-      <div className="Gcarousel">
+    <div className="firo-container">
+      <h2>Firodiya Karandak</h2>
+      <div className="carousel">
         <div
-          className="Gcarousel-wrapper"
+          className="carousel-wrapper"
           style={{
             transform: `translateX(-${currentIndex * 320}px)`,
             transition: isTransitioning ? "transform 0.5s ease-in-out" : "none",
           }}
           onTransitionEnd={handleTransitionEnd}
         >
-          {galleryImages.concat(galleryImages).map((image, index) => (
-            <div className="Gcarousel-slide" key={index}>
-              <img src={image.photo} alt={image.title} className="Gimage" />
-              <p className="Gimage-title">{image.title}</p>
+          {firoImages.concat(firoImages).map((image, index) => (
+            <div className="carousel-slide" key={index}>
+              <img src={image.photo} alt={image.title} className="image" />
+              <p className="image-title">{image.title}</p>
             </div>
           ))}
         </div>
       </div>
-      <button onClick={handlePrev} className="Gcarousel-button left">
+      <button onClick={handlePrev} className="carousel-button left">
         ←
       </button>
-      <button onClick={handleNext} className="Gcarousel-button right">
+      <button onClick={handleNext} className="carousel-button right">
         →
       </button>
-      <div>
-        <Firo/>
-      </div>
     </div>
   );
 };
 
-export default Gallery;
+export default Firo;

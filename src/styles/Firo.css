@@ -1,27 +1,27 @@
-.gallery-container {
+.firo-container {
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
 }
 
-.gallery-container h2 {
+.firo-container h2 {
 	font-size: 30px;
 	margin-bottom: 50px;
 	color: gold;
 }
 
-.Garousel {
+.carousel {
 	display: flex;
 	overflow: hidden;
 	position: relative;
 }
 
-.Gcarousel-wrapper {
+.carousel-wrapper {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.Gcarousel-slide {
+.carousel-slide {
 	flex: 0 0 auto;
 	width: 300px;
 	margin: 0 10px;
@@ -29,7 +29,7 @@
 	overflow: hidden;
 }
 
-.Gimage {
+.image {
 	width: 100%;
 	height: 200px;
 	object-fit: cover;
@@ -37,19 +37,18 @@
 	transition: transform 0.3s ease-in-out;
 }
 
-.Gimage:hover {
+.image:hover {
 	transform: scale(1.5);
 }
 
-.Gimage-title {
+.image-title {
 	margin-top: 10px;
 	font-size: 16px;
 	color: gold;
 }
 
-.Gcarousel-button {
+.carousel-button {
 	position: absolute;
-	top: 50%;
 	background-color: black;
 	color: gold;
 	border: 2px solid gold;
@@ -59,46 +58,46 @@
 	border-radius: 50%;
 }
 
-.Gcarousel-button:hover {
+.carousel-button:hover {
 	background-color: gold;
 	color: black;
 	transform: scale(1.1);
 }
 
-.Gcarousel-button.left {
+.carousel-button.left {
 	left: 10px;
 }
 
-.Gcarousel-button.right {
+.carousel-button.right {
 	right: 10px;
 }
 
 @media (max-width: 768px) {
-	.gallery-container h2 {
+	.firo-container h2 {
 		font-size: 24px;
 		margin-bottom: 15px;
 	}
 
-	.Gcarousel-slide {
+	.carousel-slide {
 		width: 300px;
 		margin: 10px;
 		margin-right: 10px;
 	}
 
-	.Gimage {
+	.image {
 		height: 50vh;
 	}
 
-	.Gcarousel-button {
+	.carousel-button {
 		padding: 8px;
 		font-size: 20px;
 	}
 
-	.Gcarousel-button.left {
+	.carousel-button.left {
 		left: 5px;
 	}
 
-	.Gcarousel-button.right {
+	.carousel-button.right {
 		right: 5px;
 	}
 }
