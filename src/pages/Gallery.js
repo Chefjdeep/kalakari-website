@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import "../styles/Gallery.css";
 
+// Import images
+import i1 from "../images/i1.jpg";
+import i2 from "../images/i2.jpg";
+import i3 from "../images/i3.jpg";
+import i4 from "../images/i4.jpg";
+import i5 from "../images/i5.jpg";
+
 const Gallery = () => {
   const galleryImages = [
-    { id: 1, title: "Cultural Event 1", photo: "/images/i1.jpg" },
-    { id: 2, title: "Cultural Event 2", photo: "/images/i2.jpg" },
-    { id: 3, title: "Cultural Event 3", photo: "/images/i3.jpg" },
-    { id: 4, title: "Cultural Event 4", photo: "/images/i4.jpg" },
-    { id: 5, title: "Cultural Event 5", photo: "/images/i5.jpg" },
+    { id: 1, title: "Cultural Event 1", photo: i1 },
+    { id: 2, title: "Cultural Event 2", photo: i2 },
+    { id: 3, title: "Cultural Event 3", photo: i3 },
+    { id: 4, title: "Cultural Event 4", photo: i4 },
+    { id: 5, title: "Cultural Event 5", photo: i5 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +22,7 @@ const Gallery = () => {
   const totalImages = galleryImages.length;
 
   const handleNext = () => {
-    if (currentIndex < totalImages) {
+    if (currentIndex < totalImages - 1) {
       setCurrentIndex((prev) => prev + 1);
     } else {
       setIsTransitioning(false);

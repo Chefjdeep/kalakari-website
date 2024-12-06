@@ -7,19 +7,19 @@ const Achievements = () => {
       id: 1,
       title: "Ach1",
       description: "Ach1",
-      photo: "/images/achievement1.jpg",
+      photo: "./images/achievement1.jpg",
     },
     {
       id: 2,
       title: "Ach2",
       description: "Ach2.",
-      photo: "/images/achievement2.jpg",
+      photo: "./images/achievement2.jpg",
     },
     {
       id: 3,
       title: "Ach3",
       description: "Ach3",
-      photo: "/images/achievement3.jpg",
+      photo: "./images/achievement3.jpg",
     },
   ];
 

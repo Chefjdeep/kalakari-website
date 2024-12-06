@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/Splash.css';
+import logo from '../images/logo.png'; // Import the logo image
 
 const Splash = ({ onFinish }) => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Splash = ({ onFinish }) => {
 
   return (
     <div className="splash-container">
-      <img src="/images/logo.png" alt="Kalakari Logo" className="splash-logo" />
+      <img src={logo} alt="Kalakari Logo" className="splash-logo" /> {/* Use the imported image */}
     </div>
   );
 };

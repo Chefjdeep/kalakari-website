@@ -6,7 +6,7 @@
 
 .gallery-container h2 {
 	font-size: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	color: gold;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .image:hover {
-	transform: scale(2);
+	transform: scale(1.5);
 }
 
 .image-title {
