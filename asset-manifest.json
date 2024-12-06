@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/kalakari-website/static/css/main.802cb2b6.css",
-    "main.js": "/kalakari-website/static/js/main.ad4cd642.js",
+    "main.css": "/kalakari-website/static/css/main.4cd3c65d.css",
+    "main.js": "/kalakari-website/static/js/main.cb095b70.js",
     "static/js/453.c9da0305.chunk.js": "/kalakari-website/static/js/453.c9da0305.chunk.js",
+    "static/media/i3.jpg": "/kalakari-website/static/media/i3.e788ff583abe3156d7de.jpg",
+    "static/media/i5.jpg": "/kalakari-website/static/media/i5.ee28817d7eba0ef65cc0.jpg",
+    "static/media/i1.jpg": "/kalakari-website/static/media/i1.594738ed4afde879fd2a.jpg",
+    "static/media/i2.jpg": "/kalakari-website/static/media/i2.014b4faa6f821d94863c.jpg",
+    "static/media/i4.jpg": "/kalakari-website/static/media/i4.b8d006a8aba1c6187ab2.jpg",
+    "static/media/music-heads.png": "/kalakari-website/static/media/music-heads.889372d985f31d9410ae.png",
+    "static/media/logo.png": "/kalakari-website/static/media/logo.e08ce5d38a9b85e188c1.png",
+    "static/media/Photo.jpeg": "/kalakari-website/static/media/Photo.b805801e09629c87f46c.jpeg",
+    "static/media/k1.png": "/kalakari-website/static/media/k1.5e2c6435b4fc8978b69b.png",
+    "static/media/name-logo.jpeg": "/kalakari-website/static/media/name-logo.c716e81ab381157c27a8.jpeg",
     "index.html": "/kalakari-website/index.html",
-    "main.802cb2b6.css.map": "/kalakari-website/static/css/main.802cb2b6.css.map",
-    "main.ad4cd642.js.map": "/kalakari-website/static/js/main.ad4cd642.js.map",
+    "main.4cd3c65d.css.map": "/kalakari-website/static/css/main.4cd3c65d.css.map",
+    "main.cb095b70.js.map": "/kalakari-website/static/js/main.cb095b70.js.map",
     "453.c9da0305.chunk.js.map": "/kalakari-website/static/js/453.c9da0305.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.802cb2b6.css",
-    "static/js/main.ad4cd642.js"
+    "static/css/main.4cd3c65d.css",
+    "static/js/main.cb095b70.js"
   ]
 }
