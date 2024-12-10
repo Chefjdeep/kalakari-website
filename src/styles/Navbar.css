@@ -115,7 +115,7 @@
     transform: scale(1.2);
   }
 }
-
+/* 
 .floating-instagram {
   position: fixed; 
   top: 50%; 
@@ -137,4 +137,4 @@
 .floating-instagram:hover {
   transform: translateY(-50%) scale(1.2);
   color: #ff9a9e;
-}
+} */

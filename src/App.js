@@ -10,6 +10,7 @@ import KalakariPage from "./pages/KalakariPage";
 import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 import "./App.css";
+import SoundPlayer from "./components/SoundPlayer";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -91,7 +92,6 @@ function AnimatedRoutes() {
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
-  // Optional: Automatically hide splash screen after a set time (e.g., 3 seconds)
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowSplash(false);
@@ -102,6 +102,7 @@ function App() {
 
   return (
     <>
+      <SoundPlayer/>
       {showSplash ? (
         <Splash onFinish={() => setShowSplash(false)} />
       ) : (
