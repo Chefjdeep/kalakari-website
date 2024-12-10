@@ -45,6 +45,23 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #e4405f; 
+  transition: transform 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; 
@@ -80,4 +97,44 @@
     padding: 0; 
     margin: 0; 
   }
+
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-icon {
+    color: #e4405f;
+    margin: 0 10px; 
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+}
+
+.floating-instagram {
+  position: fixed; 
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%); 
+  color: #e4405f; 
+  z-index: 1000; 
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: white; 
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.floating-instagram:hover {
+  transform: translateY(-50%) scale(1.2);
+  color: #ff9a9e;
 }

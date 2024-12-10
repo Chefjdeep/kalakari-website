@@ -9,16 +9,17 @@ import i4 from "../images/i4.jpg";
 import i5 from "../images/i5.jpg";
 import nameLogo from "../images/name-logo.jpeg"; 
 import i7 from "../images/i7.jpeg"
+import logo from "../images/logo.png"
 
 const KalakariPage = () => {
-  const images = [i7, i1, i2, i3, i4, i5];
+  const images = [logo, i7, i1, i2, i3, i4, i5];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); 
+    }, 3000); 
 
     return () => clearInterval(interval); 
   }, [images.length]);
